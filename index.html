@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #0074D9;
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        section {
+            background-color: #ffffff;
+            padding: 2rem;
+            margin: 1rem auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 1rem;
+        }
+        a {
+            color: #0074D9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .skills-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .skills-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        .skills-category h3 {
+            border-bottom: 2px solid #0074D9;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .certification-item {
+            margin-bottom: 1.5rem;
+        }
+        .certification-item strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .certification-item span {
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+        .resume-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #0074D9;
+            color: #ffffff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .resume-link:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rahil Nawab</h1>
+        <p>DevOps Engineer</p>
+    </header>
+    <section>
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:nawabrahil@gmail.com">nawabrahil@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/rahil-nawab/">LinkedIn</a></p>
+    </section>
+    <section>
+        <h2>About Me</h2>
+        <p>I am a DevOps Engineer with over three years of hands-on experience, dedicated to ensuring seamless software delivery and system reliability. My journey has involved managing canary deployments of Java microservices on a self-hosted Kubernetes platform running on AWS, leveraging tools like Kops and Istio to optimize performance and scalability. Beyond Kubernetes, I have deployed and worked extensively with various AWS services, enhancing my ability to design and implement robust cloud solutions. My expertise extends to automating tasks with shell scripts and designing efficient CI/CD pipelines, always striving for operational excellence. Recognized with an award for my impactful contributions, I have driven key initiatives and successfully navigated critical issues. Proficient in DevOps methodologies, I hold certifications in both AWS and Kubernetes, underscoring my commitment to continuous learning and professional growth. I am also a strong team player, collaborating effectively with cross-functional teams to achieve project goals and deliver high-quality results. My problem-solving skills enable me to tackle complex challenges and develop innovative solutions that drive continuous improvement.</p>
+    </section>
+    <section>
+        <h2>My Skills</h2>
+        <div class="skills-section">
+            <div class="skills-category">
+                <h3>Cloud Computing</h3>
+                <ul>
+                    <li>AWS</li>
+                    <li>Kubernetes</li>
+                    <li>Terraform</li>
+                    <li>Docker</li>
+                    <li>Helm</li>
+                    <li>Istio Mesh</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>DevOps & CI/CD</h3>
+                <ul>
+                    <li>Jenkins</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Bitbucket</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Monitoring</h3>
+                <ul>
+                    <li>New Relic</li>
+                    <li>CloudWatch</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Project Management</h3>
+                <ul>
+                    <li>Jira</li>
+                    <li>Confluence</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Certifications</h2>
+        <div class="certification-item">
+            <strong>Certified Kubernetes Administrator</strong>
+            <span>Issuing Organization: Cloud Native Computing Foundation (CNCF)</span>
+            <span>Issued July 2023 - Expires July 2026</span>
+            <a href="CKA.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="certification-item">
+            <strong>HashiCorp Certified: Terraform Associate (003)</strong>
+            <span>Issuing Organization: HashiCorp</span>
+            <span>Issued July 2024 - Expires July 2026</span>
+            <a href="HashiCorp_Certified_Terraform.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="certification-item">
+            <strong>AWS Certified Solutions Architect – Associate</strong>
+            <span>Issuing Organization: AWS</span>
+            <span>Issued Dec 2023 - Expires Dec 2026</span>
+            <a href="AWS_Certified_Solutions_Architect.pdf" target="_blank">View Certificate</a>
+        </div>
+        <div class="certification-item">
+            <strong>AWS Certified Cloud Practitioner</strong>
+            <span>Issuing Organization: AWS</span>
+            <span>Issued Sept 2022 - Expires Dec 2026</span>
+            <a href="AWS_CCP.pdf" target="_blank">View Certificate</a>
+        </div>
+    </section>
+    <section>
+        <h2>Download my resume</h2>
+        <a href="Rahil_Nawab.pdf" target="_blank" class="resume-link">Click here</a>
+    </section>
+</body>
+</html>
