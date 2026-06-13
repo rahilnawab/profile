@@ -1,0 +1,36 @@
+---
+import { experience } from '../data/experience';
+---
+
+<section id="experience" class="section-container">
+  <h2 class="section-title">Experience</h2>
+  <div class="relative space-y-8">
+    <div class="absolute bottom-0 left-[11px] top-2 hidden w-px bg-surface-border sm:block" aria-hidden="true" />
+    {
+      experience.map((job) => (
+        <article class="card relative sm:pl-10">
+          <div class="absolute left-0 top-8 hidden h-3 w-3 -translate-x-1/2 rounded-full border-2 border-accent bg-surface sm:block" aria-hidden="true" />
+          <div class="mb-4 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+            <div>
+              <h3 class="text-lg font-semibold text-white">{job.title}</h3>
+              <p class="text-accent">
+                {job.company} &middot; {job.location}
+              </p>
+            </div>
+            <time class="shrink-0 text-sm text-gray-500">
+              {job.startDate} &ndash; {job.endDate}
+            </time>
+          </div>
+          <ul class="space-y-2.5">
+            {job.highlights.map((item) => (
+              <li class="flex gap-3 text-sm leading-relaxed text-gray-400">
+                <span class="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent/70" aria-hidden="true" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,32 @@
+---
+const navLinks = [
+  { href: '#about', label: 'About' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#certifications', label: 'Certifications' },
+  { href: '#contact', label: 'Contact' },
+];
+---
+
+<nav class="sticky top-0 z-50 border-b border-surface-border/80 bg-surface/90 backdrop-blur-md">
+  <div class="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
+    <a href="#" class="text-sm font-semibold tracking-wide text-white transition-colors hover:text-accent">
+      RN
+    </a>
+    <ul class="flex max-w-[60vw] items-center gap-3 overflow-x-auto sm:max-w-none sm:gap-6">
+      {navLinks.map((link) => (
+        <li class="shrink-0">
+          <a
+            href={link.href}
+            class="text-xs text-gray-400 transition-colors hover:text-white sm:text-sm"
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <a href="#resume" class="btn-primary text-xs sm:text-sm">
+      Resume
+    </a>
+  </div>
+</nav>

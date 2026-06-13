@@ -1,0 +1,29 @@
+---
+import { profile } from '../data/profile';
+---
+
+<section class="relative overflow-hidden border-b border-surface-border">
+  <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-accent/20 via-transparent to-transparent" />
+  <div class="section-container relative pb-20 pt-24 text-center">
+    <p class="mb-3 text-sm font-medium uppercase tracking-widest text-accent">
+      Platform & DevOps
+    </p>
+    <h1 class="mb-4 text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
+      {profile.name}
+    </h1>
+    <p class="mx-auto mb-8 max-w-xl text-lg text-gray-400 md:text-xl">
+      {profile.title} &mdash; building reliable cloud-native platforms at scale
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-3">
+      <a href={`mailto:${profile.email}`} class="btn-primary">
+        Get in touch
+      </a>
+      <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" class="btn-outline">
+        LinkedIn
+      </a>
+      <a href={`${import.meta.env.BASE_URL}${profile.resume}`} target="_blank" class="btn-outline">
+        Download resume
+      </a>
+    </div>
+  </div>
+</section>

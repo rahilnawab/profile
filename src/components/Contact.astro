@@ -1,0 +1,36 @@
+---
+import { profile } from '../data/profile';
+---
+
+<section id="contact" class="section-container">
+  <h2 class="section-title">Contact</h2>
+  <div class="card flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <div>
+      <p class="text-gray-400">Open to opportunities in platform engineering and DevOps.</p>
+      <a
+        href={`mailto:${profile.email}`}
+        class="mt-1 block text-lg font-medium text-white transition-colors hover:text-accent"
+      >
+        {profile.email}
+      </a>
+    </div>
+    <a
+      href={profile.linkedin}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn-outline shrink-0"
+    >
+      Connect on LinkedIn
+    </a>
+  </div>
+</section>
+
+<section id="resume" class="section-container pt-0">
+  <div class="card text-center">
+    <h2 class="mb-2 text-xl font-semibold text-white">Resume</h2>
+    <p class="mb-6 text-sm text-gray-400">Download a PDF copy of my full resume.</p>
+    <a href={`${import.meta.env.BASE_URL}${profile.resume}`} target="_blank" class="btn-primary">
+      Download PDF
+    </a>
+  </div>
+</section>
