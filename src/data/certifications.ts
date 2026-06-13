@@ -9,7 +9,7 @@ export interface Certification {
 
 export const certifications: Certification[] = [
   {
-    name: 'Google Cloud Certified \u2013 Associate Cloud Engineer',
+    name: 'Google Cloud Certified - Associate Cloud Engineer',
     issuer: 'Google Cloud',
     issued: 'Jun 2025',
     expires: 'Jun 2027',
@@ -33,7 +33,7 @@ export const certifications: Certification[] = [
     badge: 'cncf',
   },
   {
-    name: 'AWS Certified Solutions Architect \u2013 Associate',
+    name: 'AWS Certified Solutions Architect - Associate',
     issuer: 'AWS',
     issued: 'Dec 2023',
     expires: 'Dec 2026',
